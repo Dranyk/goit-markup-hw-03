@@ -13,8 +13,18 @@ body {
     }
 
 ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+/* Logo */
 
 .logo {
     font-family: Raleway, sans-serif;
@@ -35,17 +45,24 @@ ul {
 .logo .accent {
     color: var(--accent-color);
 }
+
 /* Button */
 
 .button {
+    display: inline-block;
+    border-radius: 4px;
+   
     color: white;
     background-color: var(--accent-color);
     cursor: pointer;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .button.primary {
+    min-width: 200px;
+    padding: 10px 32px;
     color: white;
     background-color: var(--accent-color);
     font-weight: 700;
@@ -55,6 +72,8 @@ ul {
 }
 
 .button.secondary {
+
+    padding: 6px 22px;
     color: var(--title-text-color);
     background-color: var(--secondary-light-color);
     font-weight: 500;
@@ -66,6 +85,10 @@ ul {
 .filter-section button:focus {
     color: white;
     background-color: var(--accent-color);
+}
+ 
+.filter-section{
+    margin-bottom: 50px;
 }
 /* Site nav */
 
@@ -138,21 +161,33 @@ address {
 
 .hero {
     background-color: #2F303A;
+    text-align: center;
 }
 
 .hero-title {
+    outline: 1px solid tomato;
+    margin-top: 0;
+    margin-bottom: 30px;
+
     color: #FFFFFF;
     font-style: 400;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-}
+    }
 
 /* section */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-title {
+        margin-top: 0;
+        margin-bottom: 50px;
         color: var(--title-text-color);
         font-family: Roboto;
         font-weight: 700;
@@ -164,6 +199,9 @@ address {
 /* features */
 
 .feature-list .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -183,20 +221,31 @@ address {
 }
 
 .team-list .title {
- color: var(--title-text-color);
- font-weight: 500;
- font-size: 16px;
- line-height: 1.18;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
 }
 
 .team-list .text {
+    margin-top: 0;
     font-size: 16px;
     line-height: 1.18;
 }
 
 /* Prtfolio style */
+.portfolio-list img {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
 
 .portfolio-list .title {
+    margin-top: 0;
+    margin-bottom: 4px;
     color: var(--title-text-color);
     font-weight: bold;
     font-size: 18px;
@@ -205,6 +254,7 @@ address {
    }
 
    .portfolio-list .text {
+    margin-top: 0;
     font-size: 16px;
     line-height: 1.87;
    }
