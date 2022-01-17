@@ -36,10 +36,13 @@ ul {
 
 .page-header .logo {
     color: #000000;
+    margin-right: 93px;
     }
 
 .footer .logo {
         color: white;
+        display: block;
+        margin-bottom: 20px;
         }
 
 .logo .accent {
@@ -63,6 +66,7 @@ ul {
 .button.primary {
     min-width: 200px;
     padding: 10px 32px;
+
     color: white;
     background-color: var(--accent-color);
     font-weight: 700;
@@ -74,6 +78,7 @@ ul {
 .button.secondary {
 
     padding: 6px 22px;
+
     color: var(--title-text-color);
     background-color: var(--secondary-light-color);
     font-weight: 500;
@@ -81,18 +86,30 @@ ul {
     line-height: 1.6;
    }
 
-.filter-section button:hover,
-.filter-section button:focus {
-    color: white;
-    background-color: var(--accent-color);
-}
- 
-.filter-section{
-    margin-bottom: 50px;
-}
+
 /* Site nav */
+nav {
+    display: flex;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
 
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -114,6 +131,14 @@ color: var(--title-text-color);
     color: var(--accent-color);
     }
 
+.contact-nav {
+display: flex;
+margin-left: auto;
+}
+
+.contact-nav .item + .item {
+    margin-left: 50px;
+}
 .contact-nav a{
     color: #757575;
     
@@ -139,6 +164,7 @@ address {
     background-color: #2F303A;
 }
 
+
 .actual-address {
     color: white;
     font-size: 14px;
@@ -153,6 +179,10 @@ address {
     text-decoration: none;
 }
 
+.contact-footer .item + .item {
+    margin-top: 9px;
+}
+
 .contact-footer a:hover,
 .contact-footer a:focus {
     color: var(--accent-color);
@@ -165,7 +195,6 @@ address {
 }
 
 .hero-title {
-    outline: 1px solid tomato;
     margin-top: 0;
     margin-bottom: 30px;
 
@@ -197,6 +226,10 @@ address {
     }
 
 /* features */
+
+.feature-list {
+    display: flex;
+}
 
 .feature-list .title {
     margin-top: 0;
@@ -237,6 +270,25 @@ address {
 }
 
 /* Prtfolio style */
+
+.filter-section button:hover,
+.filter-section button:focus {
+    color: white;
+    background-color: var(--accent-color);
+}
+ 
+.filter-section{
+    display: flex;
+    
+    margin-bottom: 50px;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .portfolio-list img {
     margin-top: 0;
     margin-bottom: 20px;
