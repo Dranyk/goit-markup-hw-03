@@ -337,7 +337,6 @@ address {
 .filter-section{
     display: flex;
     justify-content: center;
-    margin-top: 67px;
     margin-bottom: 50px;
 }
 
