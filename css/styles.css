@@ -29,7 +29,7 @@ ul {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -172,6 +172,8 @@ address {
 
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 
@@ -202,6 +204,8 @@ address {
 .hero {
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -233,6 +237,8 @@ address {
         line-height: 1.16;
         text-align: center;
     }
+
+
 
 /* features */
 
@@ -266,6 +272,9 @@ address {
 }
 
 /* work */
+.work {
+    padding-bottom: 94px;
+}
 
 .work-list {
     display: flex;
@@ -279,11 +288,11 @@ address {
 
 .team {
     background-color: var(--secondary-light-color);
+    padding-bottom: 94px;
 }
 
 .team-list {
     display: flex;
-    padding-bottom: 94px;
 }
 
 .team-list .item + .item {
@@ -306,7 +315,18 @@ address {
     line-height: 1.18;
 }
 
+.team-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
 /* Prtfolio style */
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .filter-section button:hover,
 .filter-section button:focus {
@@ -328,13 +348,11 @@ address {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 121px;
 }
 
 .grid {
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #ECECEC;
     border-top: none;
 }
 
@@ -348,11 +366,11 @@ address {
 
 .portfolio-list img {
     margin-top: 0;
-    margin-bottom: 20px;
 }
 
 .card-content {
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .portfolio-list .title {
@@ -367,6 +385,7 @@ address {
 
    .portfolio-list .text {
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.87;
    }
