@@ -10,7 +10,7 @@
 }
 
 header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 body {
@@ -311,6 +311,7 @@ address {
 
 .team-list .text {
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.18;
 }
